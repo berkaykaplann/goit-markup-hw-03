@@ -43,7 +43,6 @@ ul {
   font-size: 56px;
   font-weight: 700;
   line-height: 107%;
-  margin-right: 472px;
 }
 
 .main-subheading {
@@ -81,14 +80,13 @@ ul {
 .footer-description {
   font-size: 16px;
   line-height: 150%;
+  display: inline-block;
 }
 
 .header {
   background-color: #ffffff;
 }
 .header-logo {
-  margin-top: 24px;
-  margin-left: 156px;
   display: inline-block;
 }
 .header-logo a {
@@ -103,11 +101,6 @@ ul {
 
 .header-logo a span {
   color: #2e2f42;
-}
-
-.title-section {
-  color: white;
-  background-color: #2e2f42;
 }
 
 .button {
@@ -153,16 +146,15 @@ ul {
 .list-portfolio {
   font-size: 16px;
   line-height: 150%;
-  margin-left: 156px;
-  margin-top: 232px;
+  justify-content: center;
 }
 
 .title-portfolio {
   font-size: 36px;
   font-weight: 700;
   line-height: 111%;
-  margin-top: 120px;
-  margin-left: 611px;
+  text-align: center;
+  padding-bottom: 72px;
 }
 
 h1,
@@ -184,23 +176,22 @@ ul {
 }
 .container {
   width: 1440px;
+  margin: 0 auto;
 }
 
 .header-container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 72px;
 }
 .navbar-list {
   display: flex;
-  margin-top: 24px;
-  margin-left: 76px;
   gap: 40px;
 }
 
 .address-list {
   display: flex;
-  margin-top: 24px;
-  margin-left: 332px;
   gap: 40px;
 }
 
@@ -211,45 +202,52 @@ address {
   display: inline-block;
 }
 
-.title-section-container {
+.title-section {
+  color: white;
+  background-color: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   height: 600px;
 }
 
-.container-content {
-  display: inline-block;
-  margin-top: 188px;
-  margin-left: 472px;
+.title-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
-.container-content button {
+
+.button {
   width: 169px;
   height: 56px;
-  margin-top: 48px;
-  margin-left: 164px;
 }
 
 .main-list {
   display: flex;
-  margin-top: 120px;
-  margin-left: 156px;
-  margin-right: 156px;
+  padding: 120px 156px;
 }
 .team-container {
   height: 732px;
 }
 .team-list {
   display: flex;
-  margin-top: 232px;
-  margin-left: 156px;
+  justify-content: center;
   gap: 24px;
+  padding-top: 72px;
+}
+
+.team-list h3,
+.team-list p {
+  text-align: center;
 }
 
 .team-container .team-title {
-  padding-top: 120px;
-  margin-top: 344px;
-  margin-left: 639px;
+  text-align: center;
 }
 
-.portfolio-container .list-portfolio {
+.list-portfolio {
   display: flex;
   flex-wrap: wrap;
   gap: 24px 48px;
@@ -260,6 +258,17 @@ footer {
 }
 
 .footer-container {
-  margin-top: 100px;
-  margin-left: 156px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 100px;
+  padding-left: 156px;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.main-list {
+  gap: 24px;
 }
