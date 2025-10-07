@@ -19,7 +19,6 @@
 body {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #434455;
-  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -87,6 +86,7 @@ ul {
   background-color: #ffffff;
 }
 .header-logo {
+  padding-left: 156px;
   display: inline-block;
 }
 .header-logo a {
@@ -183,7 +183,9 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 72px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d5d5d5;
 }
 .navbar-list {
   display: flex;
@@ -200,6 +202,7 @@ nav {
 }
 address {
   display: inline-block;
+  padding-right: 156px;
 }
 
 .title-section {
@@ -216,7 +219,7 @@ address {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 48px;
 }
 
 .button {
@@ -226,16 +229,26 @@ address {
 
 .main-list {
   display: flex;
-  padding: 120px 156px;
+  padding: 0 156px;
 }
-.team-container {
-  height: 732px;
-}
+
 .team-list {
   display: flex;
   justify-content: center;
   gap: 24px;
   padding-top: 72px;
+}
+.team-list img {
+  padding-bottom: 32px;
+}
+
+.team-subheading-container {
+  padding-bottom: 32px;
+  gap: 8px;
+}
+
+.team-list li {
+  background-color: #ffffff;
 }
 
 .team-list h3,
@@ -250,7 +263,20 @@ address {
 .list-portfolio {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px 48px;
+  gap: 48px 24px;
+}
+.list-portfolio li {
+  border: 1px solid #e7e9fc;
+}
+
+.list-portfolio img {
+  padding-bottom: 32px;
+}
+
+.portfolio-subheading-container {
+  padding-left: 16px;
+  padding-bottom: 32px;
+  gap: 8px;
 }
 
 footer {
